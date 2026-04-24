@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Mirchandani — The Ultimate Marriage Biodata™</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #c9a84c;
+  --gold2: #e8c97a;
+  --gold3: #f5e6b0;
+  --dark: #0e0b06;
+  --cream: #fdf6e3;
+  --brown: #6b3f1f;
+  --red: #b5281c;
+  --green: #1a6b3c;
+  --ink: #1c1507;
+  --shadow: rgba(100,60,0,0.18);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #1a1005;
+  font-family: 'Outfit', sans-serif;
+  color: var(--ink);
+  cursor: none;
+  overflow-x: hidden;
+}
+
+/* ===================== CUSTOM CURSOR ===================== */
+#cursor {
+  width: 14px; height: 14px;
+  background: var(--gold);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%,-50%);
+  transition: transform 0.1s, width 0.2s, height 0.2s, background 0.2s;
+  mix-blend-mode: difference;
+}
+#cursor-ring {
+  width: 36px; height: 36px;
+  border: 1.5px solid var(--gold2);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%,-50%);
+  transition: all 0.12s ease;
+  opacity: 0.7;
+}
+body:hover #cursor { opacity: 1; }
+
+/* ===================== PARTICLE CANVAS ===================== */
+#particles { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+
+/* ===================== SCROLL PROGRESS ===================== */
+#progress-bar {
+  position: fixed; top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold2), var(--gold3));
+  z-index: 1000;
+  width: 0%;
+  transition: width 0.1s;
+  box-shadow: 0 0 12px var(--gold2);
+}
+
+/* ===================== NAV ===================== */
+nav {
+  position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
+  z-index: 500;
+  background: rgba(14,11,6,0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 50px;
+  padding: 10px 28px;
+  display: flex; gap: 28px;
+  animation: slideDown 0.8s 0.5s ease both;
+}
+nav a {
+  color: var(--gold2);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+nav a:hover { color: #fff; }
+
+/* ===================== MAIN WRAPPER ===================== */
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 100px 20px 60px;
+}
+
+/* ===================== HERO SECTION ===================== */
+.hero {
+  background: linear-gradient(160deg, #fffdf4 0%, #fdf0ca 50%, #fae8b0 100%);
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 0 6px rgba(201,168,76,0.12), 0 30px 80px rgba(0,0,0,0.5);
+  padding: 70px 60px 50px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* animated gold shimmer on hero */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,220,100,0.12) 50%, transparent 60%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.hero-bg-text {
+  position: absolute;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 220px;
+  font-weight: 700;
+  color: rgba(201,168,76,0.06);
+  top: -30px; left: -10px;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -10px;
+  user-select: none;
+}
+
+.corner-ornament {
+  position: absolute;
+  font-size: 32px;
+  color: var(--gold);
+  opacity: 0.7;
+  line-height: 1;
+  animation: cornerPulse 4s ease-in-out infinite;
+}
+.corner-ornament.tl { top: 16px; left: 16px; animation-delay: 0s; }
+.corner-ornament.tr { top: 16px; right: 16px; transform: scaleX(-1); animation-delay: 1s; }
+.corner-ornament.bl { bottom: 16px; left: 16px; transform: scaleY(-1); animation-delay: 2s; }
+.corner-ornament.br { bottom: 16px; right: 16px; transform: scale(-1); animation-delay: 3s; }
+
+@keyframes cornerPulse {
+  0%,100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+.corner-ornament.tr { animation: cornerPulse2 4s 1s ease-in-out infinite; }
+.corner-ornament.bl { animation: cornerPulse2 4s 2s ease-in-out infinite; }
+.corner-ornament.br { animation: cornerPulse2 4s 3s ease-in-out infinite; }
+@keyframes cornerPulse2 {
+  0%,100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--dark);
+  color: var(--gold2);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border: 1px solid var(--gold);
+  margin-bottom: 22px;
+  animation: fadeDown 0.7s 0.8s ease both;
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--dark);
+  letter-spacing: -2px;
+  animation: fadeDown 0.7s 0.9s ease both;
+}
+
+.hero-name span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.hero-tagline {
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  color: var(--brown);
+  margin: 12px 0 8px;
+  animation: fadeDown 0.7s 1s ease both;
+}
+
+.hero-sub {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999;
+  animation: fadeDown 0.7s 1.1s ease both;
+}
+
+.hero-cols {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  align-items: end;
+  margin-top: 30px;
+}
+
+.hero-stats-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s 1.2s ease both;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 2px solid var(--gold);
+  padding-left: 12px;
+}
+
+.hero-stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #888;
+}
+
+/* Avatar */
+.avatar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: fadeUp 0.7s 1.3s ease both;
+}
+
+.avatar {
+  width: 150px; height: 150px;
+  border: 3px solid var(--gold);
+  background: linear-gradient(135deg, #f9e8c0, #f0d080);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 60%, rgba(255,200,50,0.3));
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -8px;
+  border: 1px dashed var(--gold2);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.avatar-note {
+  font-family: 'Caveat', cursive;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Stamp */
+.stamp {
+  position: absolute;
+  top: 50px; right: 60px;
+  width: 110px; height: 110px;
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  transform: rotate(12deg);
+  color: var(--red);
+  opacity: 0;
+  animation: stampIn 0.6s 2s cubic-bezier(0.36,0.07,0.19,0.97) forwards;
+}
+
+@keyframes stampIn {
+  0% { opacity:0; transform: rotate(12deg) scale(4); }
+  70% { transform: rotate(12deg) scale(0.92); }
+  100% { opacity: 0.75; transform: rotate(12deg) scale(1); }
+}
+
+.stamp-text { font-family:'Cormorant Garamond',serif; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+.stamp-big { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:700; }
+
+/* ===================== CARD BASE ===================== */
+.card {
+  background: linear-gradient(145deg, #fffdf4, #fdf0c8);
+  border: 1px solid var(--gold);
+  padding: 40px 50px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: box-shadow 0.3s;
+}
+
+.card.visible {
+  animation: cardIn 0.7s ease forwards;
+}
+
+@keyframes cardIn {
+  to { opacity:1; transform:translateY(0); }
+}
+
+.card:hover {
+  box-shadow: 0 20px 60px rgba(100,60,0,0.2), 0 0 0 1px var(--gold2);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--gold2), var(--gold), transparent);
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.section-label::before {
+  content: '';
+  width: 20px; height: 1px;
+  background: var(--gold);
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.section-title em {
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* ===================== INFO ROWS ===================== */
+.info-rows { display: flex; flex-direction: column; gap: 0; }
+
+.info-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  transition: background 0.2s;
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.info-row:hover {
+  background: rgba(201,168,76,0.05);
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.info-key {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding-top: 2px;
+}
+
+.info-val {
+  font-size: 15px;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.info-val .sub {
+  font-family: 'Caveat', cursive;
+  font-size: 14px;
+  color: var(--brown);
+  margin-left: 6px;
+}
+
+.info-val .badge-inline {
+  display: inline-block;
+  background: var(--dark);
+  color: var(--gold2);
+  font-size: 10px;
+  padding: 2px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 8px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+/* ===================== ACHIEVEMENT TIMELINE ===================== */
+.timeline { position: relative; padding-left: 30px; }
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px; top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: all 0.5s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -26px; top: 6px;
+  width: 12px; height: 12px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.2);
+}
+
+.timeline-item:hover::before {
+  transform: scale(1.4);
+  box-shadow: 0 0 0 5px rgba(201,168,76,0.3), 0 0 12px var(--gold);
+  transition: all 0.2s;
+}
+
+.tl-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+
+.tl-sub {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.tl-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.tl-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  color: var(--dark);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* ===================== SKILLS ===================== */
+.skills-cloud {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+
+.skill-pill {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--brown);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  cursor: default;
+  transition: all 0.25s cubic-bezier(0.34,1.56,0.64,1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-pill::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  opacity: 0;
+  transition: opacity 0.25s;
+  z-index: 0;
+}
+
+.skill-pill:hover {
+  color: var(--dark);
+  transform: translateY(-4px) scale(1.05);
+  border-color: var(--gold2);
+  box-shadow: 0 8px 20px rgba(201,168,76,0.3);
+}
+
+.skill-pill:hover::before { opacity: 1; }
+
+.skill-pill span { position: relative; z-index: 1; }
+
+/* ===================== STATS BENTO ===================== */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.bento-cell {
+  background: var(--dark);
+  border: 1px solid rgba(201,168,76,0.25);
+  padding: 24px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.bento-cell:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3), 0 0 20px rgba(201,168,76,0.15);
+}
+
+.bento-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--gold2);
+  line-height: 1;
+  display: block;
+}
+
+.bento-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+  display: block;
+}
+
+.bento-cell.wide { grid-column: span 2; }
+
+/* ===================== COMPATIBILITY QUIZ ===================== */
+.quiz-wrap { margin-top: 10px; }
+
+.quiz-question {
+  font-size: 15px;
+  color: var(--dark);
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  background: rgba(201,168,76,0.06);
+  border-left: 3px solid var(--gold);
+}
+
+.quiz-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+
+.quiz-btn {
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--brown);
+  padding: 12px 20px;
+  text-align: left;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.quiz-btn:hover {
+  background: rgba(201,168,76,0.1);
+  border-color: var(--gold);
+  color: var(--dark);
+  padding-left: 28px;
+}
+
+.quiz-result {
+  display: none;
+  padding: 20px;
+  background: var(--dark);
+  border: 1px solid var(--gold);
+  color: var(--gold2);
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.quiz-result.show { display: block; animation: fadeUp 0.5s ease both; }
+
+#quiz-next {
+  display: none;
+  background: var(--gold);
+  color: var(--dark);
+  border: none;
+  padding: 10px 24px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.2s;
+}
+#quiz-next:hover { background: var(--gold2); transform: translateY(-2px); }
+
+/* ===================== PARTNER REQUIREMENTS ===================== */
+.req-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.req-item {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+  border-right: 1px solid rgba(201,168,76,0.15);
+  transition: background 0.2s;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.req-item:hover { background: rgba(201,168,76,0.07); }
+
+.req-item:nth-child(2n) { border-right: none; }
+
+.req-icon { font-size: 18px; display: block; margin-bottom: 4px; }
+
+/* ===================== ROAST METER ===================== */
+.roast-meter-wrap { margin-top: 10px; }
+
+.meter-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 50px;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.meter-label { font-size: 13px; font-weight: 500; color: var(--dark); }
+
+.meter-bar-bg {
+  height: 8px;
+  background: rgba(201,168,76,0.15);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.meter-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold2));
+  width: 0%;
+  transition: width 1.2s cubic-bezier(0.25,1,0.5,1);
+  position: relative;
+}
+
+.meter-bar::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 0;
+  width: 4px; height: 100%;
+  background: #fff;
+  opacity: 0.6;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:.9} }
+
+.meter-val { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:700; color:var(--gold); text-align:right; }
+
+/* ===================== TESTIMONIALS ===================== */
+.testimonials { display: flex; flex-direction: column; gap: 16px; }
+
+.testimonial {
+  padding: 20px 24px;
+  border: 1px solid rgba(201,168,76,0.2);
+  background: rgba(201,168,76,0.03);
+  position: relative;
+  transition: all 0.25s;
+}
+
+.testimonial:hover { border-color: var(--gold); background: rgba(201,168,76,0.07); }
+
+.testimonial::before {
+  content: '"';
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 80px;
+  color: var(--gold2);
+  opacity: 0.2;
+  position: absolute;
+  top: -10px; left: 14px;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  color: var(--brown);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.testimonial-author {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ===================== DISCLAIMER ===================== */
+.disclaimer-box {
+  background: var(--dark);
+  border: 1px dashed rgba(181,40,28,0.5);
+  padding: 24px 30px;
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.disclaimer-box::before {
+  content: '⚠ IMPORTANT NOTICE ⚠';
+  position: absolute;
+  top: 8px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.disclaimer-text {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer-card {
+  background: var(--dark);
+  border: 1px solid var(--gold);
+  padding: 50px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-card::before {
+  content: 'HM';
+  position: absolute;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 280px;
+  font-weight: 700;
+  color: rgba(201,168,76,0.04);
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  line-height: 1;
+}
+
+.footer-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-style: italic;
+  color: var(--gold2);
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.footer-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 17px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 28px;
+}
+
+.footer-meta {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.2);
+  text-transform: uppercase;
+}
+
+/* ===================== CONFETTI BUTTON ===================== */
+.confetti-btn {
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  color: var(--dark);
+  border: none;
+  padding: 14px 36px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.confetti-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(201,168,76,0.4); }
+.confetti-btn:active { transform: translateY(0); }
+
+/* ===================== ANIMATIONS ===================== */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* ===================== FLOATY EMOJI ===================== */
+.floaty {
+  position: fixed;
+  font-size: 24px;
+  pointer-events: none;
+  z-index: 9990;
+  animation: floatUp 2s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0) rotate(0deg); }
+  100% { opacity: 0; transform: translateY(-150px) rotate(30deg); }
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 680px) {
+  nav { display: none; }
+  .hero { padding: 40px 24px 36px; }
+  .hero-name { font-size: 48px; }
+  .card { padding: 28px 24px; }
+  .bento { grid-template-columns: 1fr 1fr; }
+  .bento-cell.wide { grid-column: span 2; }
+  .req-grid { grid-template-columns: 1fr; }
+  .meter-row { grid-template-columns: 120px 1fr 40px; }
+  .info-row { grid-template-columns: 130px 1fr; }
+  .hero-cols { grid-template-columns: 1fr; }
+  .stamp { display: none; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="progress-bar"></div>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#achievements">Feats</a>
+  <a href="#skills">Skills</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#verdict">Verdict</a>
+</nav>
+
+<div class="wrapper">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero" id="about">
+    <div class="hero-bg-text">HARSH</div>
+
+    <div class="corner-ornament tl">❧</div>
+    <div class="corner-ornament tr">❧</div>
+    <div class="corner-ornament bl">❧</div>
+    <div class="corner-ornament br">❧</div>
+
+    <div class="stamp">
+      <span class="stamp-text">Certified</span>
+      <span class="stamp-big">AIR 1</span>
+      <span class="stamp-text">India 2025</span>
+    </div>
+
+    <div class="hero-badge">✦ Premium Marriage Biodata — 2025 Edition ✦</div>
+    <div class="hero-name">Harsh <span>Mirchandani</span></div>
+    <div class="hero-tagline">"Yes, the AIR 1 guy. Yes, he's single. No, we don't understand it either."</div>
+    <div class="hero-sub">IIT Bombay · Computer Science · Age 20 · One-of-a-Kind</div>
+
+    <div class="hero-cols">
+      <div class="hero-stats-row">
+        <div class="hero-stat">
+          <span class="hero-stat-num">#1</span>
+          <span class="hero-stat-label">All India Rank</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">20</span>
+          <span class="hero-stat-label">Years of Excellence</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">∞</span>
+          <span class="hero-stat-label">Potential</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">1</span>
+          <span class="hero-stat-label">Available Specimen</span>
+        </div>
+      </div>
+
+      <div class="avatar-wrap">
+        <div class="avatar" style="position:relative;">
+          <div class="avatar-ring"></div>
+          👨‍💻
+        </div>
+        <span class="avatar-note">Photo: classified until<br>kundali approved 🔒</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PERSONAL INFO ===== -->
+  <div class="card" id="info-card">
+    <div class="section-label">Personal Dossier</div>
+    <div class="section-title">The <em>Official</em> Details</div>
+    <div class="info-rows">
+      <div class="info-row">
+        <span class="info-key">Full Name</span>
+        <span class="info-val">Harsh Mirchandani <span class="badge-inline">Legendary</span></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Age</span>
+        <span class="info-val">20 years <span class="sub">(vintage 2005 — appreciates with time)</span></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Institution</span>
+        <span class="info-val">Indian Institute of Technology, Bombay <span class="sub">(yes, that IIT)</span></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Branch</span>
+        <span class="info-val">Computer Science & Engineering <span class="sub">(universe chose correctly)</span></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">JEE Rank</span>
+        <span class="info-val" style="color:var(--gold); font-weight:700;">AIR 1 — JEE Advanced 2025 🏆 <span class="sub">(out of ~1.8 million. one. single. one.)</span></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Occupation</span>
+        <span class="info-val">Professional Topper, Part-time Human, Full-time Chai Connoisseur</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Nationality</span>
+        <span class="info-val">Indian <span class="sub">(India's greatest export of 2025)</span></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Languages</span>
+        <span class="info-val">Hindi, English, C++, Python, Java, Fluent Sarcasm</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Marital Status</span>
+        <span class="info-val" style="color:var(--green); font-weight:600;">✅ Single — (shockingly, inexplicably, cosmically available)</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Horoscope</span>
+        <span class="info-val">Stars aligned specifically for AIR 1 <span class="sub">(kundali available on request)</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ACHIEVEMENTS TIMELINE ===== -->
+  <div class="card" id="achievements">
+    <div class="section-label">Hall of Fame</div>
+    <div class="section-title">A <em>Brief</em> History of Being Exceptional</div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="tl-tag">🏆 Greatest Hit</div>
+        <div class="tl-title">AIR 1 — JEE Advanced 2025</div>
+        <div class="tl-sub">India's Most Competitive Examination · 1.8 Million Contestants</div>
+        <div class="tl-desc">Ranked first among every single engineering aspirant in the country. His WhatsApp that day received approximately 847 "bhai tu toh set hai" messages within 6 hours. His mother called it "expected." His father smiled so wide his face nearly broke. 📱</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-tag">🎓 Current Mission</div>
+        <div class="tl-title">B.Tech, Computer Science — IIT Bombay</div>
+        <div class="tl-sub">The Only Branch That Matters™ · Currently in Progress</div>
+        <div class="tl-desc">Chosen IIT Bombay's CSE — the single most sought-after seat in Indian higher education. His batchmates are simultaneously his greatest fans and his most jealous critics. He debugs code at 2AM while others sleep. He calls it "productivity." Experts call it "alarming." 🖥️</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-tag">🧠 Intellectual Achievement</div>
+        <div class="tl-title">Mastered the Art of Learning Anything</div>
+        <div class="tl-sub">Full-Stack Human · Autodidact Extraordinaire</div>
+        <div class="tl-desc">Demonstrated superhuman ability to pick up new skills at speeds that make normal people uncomfortable. Has been known to watch a 10-hour course in an afternoon and immediately build something with it. Sleep schedule: optional. Brain: always on. ⚡</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-tag">🏅 Social Achievement</div>
+        <div class="tl-title">Most Referenced Person by Batchmates' Parents</div>
+        <div class="tl-sub">Unsolicited · Nationwide · Ongoing</div>
+        <div class="tl-desc">"Harsh ne toh AIR 1 liya tha" — spoken in approximately 10,000 households across India as of 2025. Has directly caused an unknown number of existential crises in fellow toppers. Unintentional, unbothered, and impossible to escape. 😂</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-tag">💻 Tech Prowess</div>
+        <div class="tl-title">Algorithm Whisperer & Data Structure Deity</div>
+        <div class="tl-sub">Competitive Programming · System Design · The Works</div>
+        <div class="tl-desc">Solves problems that would take normal engineers hours — in the time it takes to finish a cup of tea. His code is clean, his logic is sound, and his variable names are suspiciously good. Rumoured to think in O(log n) even in daily life. 🧮</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== SKILLS ===== -->
+  <div class="card" id="skills">
+    <div class="section-label">Superpowers</div>
+    <div class="section-title">Skills & <em>Suspicious Talents</em></div>
+    <p style="font-size:13px; color:#888; font-style:italic; margin-bottom:20px;">Hover to unlock. Skills independently verified by absolutely no one and everyone simultaneously.</p>
+    <div class="skills-cloud">
+      <div class="skill-pill"><span>🧠 Literally Cracked</span></div>
+      <div class="skill-pill"><span>💻 Algorithms (obviously)</span></div>
+      <div class="skill-pill"><span>📐 Advanced Mathematics</span></div>
+      <div class="skill-pill"><span>⚡ Competitive Programming</span></div>
+      <div class="skill-pill"><span>🔬 Physics Intuition</span></div>
+      <div class="skill-pill"><span>🗂️ System Design</span></div>
+      <div class="skill-pill"><span>🌐 DSA Grandmaster</span></div>
+      <div class="skill-pill"><span>☕ Runs on Chai</span></div>
+      <div class="skill-pill"><span>🌙 Nocturnal Productivity</span></div>
+      <div class="skill-pill"><span>📚 Self-Taught Anything</span></div>
+      <div class="skill-pill"><span>🧘 Calm Under Pressure</span></div>
+      <div class="skill-pill"><span>🎯 Laser Focus</span></div>
+      <div class="skill-pill"><span>🤝 Secretly Very Fun</span></div>
+      <div class="skill-pill"><span>🗣️ Certified Funny Guy</span></div>
+      <div class="skill-pill"><span>🎮 Strategic Thinker</span></div>
+      <div class="skill-pill"><span>🚀 Future CTO Material</span></div>
+      <div class="skill-pill"><span>💡 First Principles Thinker</span></div>
+      <div class="skill-pill"><span>🧩 Puzzle Destroyer</span></div>
+      <div class="skill-pill"><span>🎸 Will Learn Guitar (2027)</span></div>
+      <div class="skill-pill"><span>🍕 Elite Food Taste</span></div>
+      <div class="skill-pill"><span>😂 Dark Humour Specialist</span></div>
+      <div class="skill-pill"><span>🏃 Runs from Deadlines</span></div>
+      <div class="skill-pill"><span>📊 Data Analysis God</span></div>
+      <div class="skill-pill"><span>🌍 Global IQ Top 0.01%</span></div>
+      <div class="skill-pill"><span>🔐 Cybersecurity-aware</span></div>
+      <div class="skill-pill"><span>🤖 AI/ML Curious</span></div>
+      <div class="skill-pill"><span>🧬 Logical Reasoning</span></div>
+      <div class="skill-pill"><span>📱 Tech Trend Spotter</span></div>
+      <div class="skill-pill"><span>🎤 Surprisingly Good Explainer</span></div>
+      <div class="skill-pill"><span>⏰ Time Bender (sometimes)</span></div>
+    </div>
+    <p style="font-family:'Caveat',cursive; font-size:14px; color:#aaa; text-align:right; margin-top:14px;">*Also knows how to make Maggi. Relationship material confirmed. ✅</p>
+  </div>
+
+  <!-- ===== ROAST-O-METER ===== -->
+  <div class="card">
+    <div class="section-label">Scientific Analysis</div>
+    <div class="section-title">The <em>Harsh Meter</em> — Official Stats</div>
+    <div class="roast-meter-wrap" id="meters">
+      <div class="meter-row">
+        <span class="meter-label">🧠 Brainpower</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="99"></div></div>
+        <span class="meter-val">99</span>
+      </div>
+      <div class="meter-row">
+        <span class="meter-label">😂 Humour</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="91"></div></div>
+        <span class="meter-val">91</span>
+      </div>
+      <div class="meter-row">
+        <span class="meter-label">☕ Chai Dependency</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="100"></div></div>
+        <span class="meter-val">∞</span>
+      </div>
+      <div class="meter-row">
+        <span class="meter-label">💻 Coding Speed</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="97"></div></div>
+        <span class="meter-val">97</span>
+      </div>
+      <div class="meter-row">
+        <span class="meter-label">😴 Sleep Schedule</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="14"></div></div>
+        <span class="meter-val">14</span>
+      </div>
+      <div class="meter-row">
+        <span class="meter-label">🏆 Trophy Count</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="95"></div></div>
+        <span class="meter-val">95</span>
+      </div>
+      <div class="meter-row">
+        <span class="meter-label">🤵 Marriage Readiness</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="72"></div></div>
+        <span class="meter-val">72</span>
+      </div>
+      <div class="meter-row">
+        <span class="meter-label">🙈 Ego (surprisingly)</span>
+        <div class="meter-bar-bg"><div class="meter-bar" data-width="12"></div></div>
+        <span class="meter-val">12</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== COMPATIBILITY QUIZ ===== -->
+  <div class="card" id="quiz">
+    <div class="section-label">Interactive Feature</div>
+    <div class="section-title">Are You <em>Compatible</em> with AIR 1?</div>
+    <p style="font-size:13px; color:#888; font-style:italic; margin-bottom:20px;">A completely unbiased scientific assessment. Answer honestly. (Results are not legally binding.)</p>
+    <div class="quiz-wrap" id="quizContainer">
+      <!-- JS rendered -->
+    </div>
+  </div>
+
+  <!-- ===== BENTO STATS ===== -->
+  <div class="card">
+    <div class="section-label">By the Numbers</div>
+    <div class="section-title">Life in <em>Statistics</em></div>
+    <div class="bento">
+      <div class="bento-cell">
+        <span class="bento-num">1</span>
+        <span class="bento-label">JEE Rank in India</span>
+      </div>
+      <div class="bento-cell">
+        <span class="bento-num">1.8M</span>
+        <span class="bento-label">People he beat</span>
+      </div>
+      <div class="bento-cell">
+        <span class="bento-num">0</span>
+        <span class="bento-label">Times asked "padha kya?"</span>
+      </div>
+      <div class="bento-cell wide" style="grid-column:span 2;">
+        <span class="bento-num" style="font-size:32px;">∞</span>
+        <span class="bento-label">Number of "Harsh jaisa ban" comparisons made by parents across India</span>
+      </div>
+      <div class="bento-cell">
+        <span class="bento-num">847</span>
+        <span class="bento-label">Congrats messages on result day</span>
+      </div>
+      <div class="bento-cell">
+        <span class="bento-num">2AM</span>
+        <span class="bento-label">Standard coding hour</span>
+      </div>
+      <div class="bento-cell">
+        <span class="bento-num">4+</span>
+        <span class="bento-label">Cups of chai per day (minimum)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <div class="card">
+    <div class="section-label">Social Proof</div>
+    <div class="section-title">What They're <em>Saying</em></div>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="testimonial-text">"Harsh beta ne AIR 1 liya. Tumhare beta ne kya kiya? Hmm?" — sent to every child in India on results day.</div>
+        <div class="testimonial-author">— Every Indian Parent, simultaneously, 2025</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-text">"Bhai seriously how? I studied 16 hours a day. He was chilling and got RANK ONE. I need answers."</div>
+        <div class="testimonial-author">— Anonymous JEE Aspirant (extremely online)</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-text">"He's genuinely one of the nicest guys in our batch. Also annoyingly good at everything. We've accepted it."</div>
+        <div class="testimonial-author">— IIT Bombay Batchmate (verified friend)</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-text">"My son! I always knew. Since he was 3. He would arrange his blocks alphabetically. That's when I knew."</div>
+        <div class="testimonial-author">— His Mother (extremely objective witness)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PARTNER REQUIREMENTS ===== -->
+  <div class="card" id="verdict">
+    <div class="section-label">Criteria</div>
+    <div class="section-title">Partner <em>Expectations</em></div>
+    <p style="font-size:13px; color:#888; font-style:italic; margin-bottom:20px;">"I don't have any requirements" — Harsh. (We wrote them anyway. You're welcome, Harsh.)</p>
+    <div class="req-grid">
+      <div class="req-item">
+        <span class="req-icon">😂</span>
+        Must laugh at his jokes — even the ones about time complexity at 1AM
+      </div>
+      <div class="req-item">
+        <span class="req-icon">🚫</span>
+        Strictly prohibited from asking "toh aage kya plan hai?" — he's 20, relax
+      </div>
+      <div class="req-item">
+        <span class="req-icon">📲</span>
+        Okay receiving "random interesting fact" texts at 2:37AM — this is non-negotiable
+      </div>
+      <div class="req-item">
+        <span class="req-icon">☕</span>
+        Must respect chai as a sacred institution, not a casual beverage
+      </div>
+      <div class="req-item">
+        <span class="req-icon">💬</span>
+        Can hold a 45-minute conversation about algorithms at dinner and not leave
+      </div>
+      <div class="req-item">
+        <span class="req-icon">🧠</span>
+        Appreciates intelligence but doesn't weaponise it in arguments (he does this enough for both)
+      </div>
+      <div class="req-item">
+        <span class="req-icon">🏆</span>
+        Thinks AIR 1 is kind of cool (it is extremely cool, let's be honest)
+      </div>
+      <div class="req-item">
+        <span class="req-icon">😴</span>
+        Understands that "I'll sleep after this last problem" means 4AM
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DISCLAIMER ===== -->
+  <div class="disclaimer-box">
+    <div class="disclaimer-text">
+      ⚠️ This biodata has been rated 10/10 by Harsh's mom, 10/10 by all relatives, and
+      "WAIT WHO MADE THIS??" by Harsh himself. Side effects of reading include unrealistically
+      high standards, spontaneous respect, and an overwhelming urge to tell your parents
+      you also know AIR 1 personally. No biodatas were harmed in the making of this page.
+      Harsh's ego remains, remarkably, a solid 12/100. 😂
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer-card">
+    <div class="footer-quote">"Kuch bhi ho jaye — AIR 1 toh hai."</div>
+    <div class="footer-sub">— Every aunty at every family function, indefinitely, forever 🙏</div>
+    <button class="confetti-btn" onclick="launchCelebration()">🎉 Celebrate Harsh</button>
+    <br>
+    <div class="footer-meta">Harsh Mirchandani © 2025 · IIT Bombay CSE · Made with ☕ + 📚 + Highly Questionable Sleep Schedule</div>
+  </div>
+
+</div><!-- /wrapper -->
+
+<script>
+// ===================== CURSOR =====================
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top = my + 'px';
+});
+
+function animateRing() {
+  rx += (mx - rx) * 0.12;
+  ry += (my - ry) * 0.12;
+  ring.style.left = rx + 'px';
+  ring.style.top = ry + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+document.querySelectorAll('a, button, .skill-pill, .quiz-btn, .bento-cell').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.style.width = '24px'; cursor.style.height = '24px';
+    ring.style.width = '60px'; ring.style.height = '60px';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.style.width = '14px'; cursor.style.height = '14px';
+    ring.style.width = '36px'; ring.style.height = '36px';
+  });
+});
+
+// ===================== SCROLL PROGRESS =====================
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  document.getElementById('progress-bar').style.width = pct + '%';
+});
+
+// ===================== PARTICLES =====================
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let W, H, particles = [];
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+class Particle {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * W;
+    this.y = Math.random() * H + H;
+    this.size = Math.random() * 2 + 0.5;
+    this.speed = Math.random() * 0.5 + 0.2;
+    this.opacity = Math.random() * 0.5 + 0.1;
+    this.drift = (Math.random() - 0.5) * 0.3;
+  }
+  update() {
+    this.y -= this.speed;
+    this.x += this.drift;
+    if (this.y < -10) this.reset();
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(201,168,76,${this.opacity})`;
+    ctx.fill();
+  }
+}
+
+for (let i = 0; i < 80; i++) {
+  const p = new Particle();
+  p.y = Math.random() * H; // scatter initially
+  particles.push(p);
+}
+
+function drawParticles() {
+  ctx.clearRect(0, 0, W, H);
+  particles.forEach(p => { p.update(); p.draw(); });
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+// ===================== SCROLL REVEAL =====================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationDelay = (i * 0.05) + 's';
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.card, .timeline-item').forEach(el => observer.observe(el));
+
+// ===================== METERS =====================
+const meterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.meter-bar').forEach(bar => {
+        const w = bar.getAttribute('data-width');
+        setTimeout(() => { bar.style.width = w + '%'; }, 200);
+      });
+      meterObserver.disconnect();
+    }
+  });
+}, { threshold: 0.3 });
+
+meterObserver.observe(document.getElementById('meters'));
+
+// ===================== QUIZ =====================
+const quizData = [
+  {
+    q: "It's 2AM. Harsh texts: 'Did you know the time complexity of Dijkstra's algorithm with a Fibonacci heap is O(E + V log V)?' You:",
+    options: [
+      { text: "Reply immediately: 'Actually O(E + V log V) — I was just thinking about this'", score: 10, reply: "🔥 PERFECT MATCH. Harsh is already typing your name in his kundali." },
+      { text: "Send a voice note asking him to explain it to you", score: 7, reply: "💛 Strong contender. Curiosity is deeply attractive to AIR 1 holders." },
+      { text: "React with 😂 and go back to sleep", score: 4, reply: "😅 Casual fit. He'll respect your boundaries. Mostly." },
+      { text: "Read at 9AM, reply: 'k'", score: 1, reply: "💀 You have the energy of a null pointer exception. But he'd find it hilarious." }
+    ]
+  },
+  {
+    q: "Harsh orders chai for the 5th time today. The waiter raises an eyebrow. You:",
+    options: [
+      { text: "Order a sixth chai in solidarity without being asked", score: 10, reply: "☕ SOULMATE DETECTED. This is the one." },
+      { text: "Silently judge but say nothing because love is accepting", score: 7, reply: "😌 Mature. Functional. Sustainable. Good score." },
+      { text: "Say 'maybe switch to water?' (genuinely concerned)", score: 4, reply: "💧 You care too much. He will not listen. But it's sweet." },
+      { text: "Take the chai from him as a health intervention", score: 2, reply: "😱 Bold. Dangerous. 0% survival rate. Respect." }
+    ]
+  },
+  {
+    q: "At dinner, Harsh's relative asks 'beta aapke baad kaun tha JEE mein?' You:",
+    options: [
+      { text: "Jump in: 'AIR 1 means literally everyone. 1.8 MILLION PEOPLE.' (proud energy)", score: 10, reply: "🏆 Hype partner confirmed. He's blushing. This is love." },
+      { text: "Smile supportively while he explains with fake modesty", score: 8, reply: "💛 Exactly the energy. Subtle support. Very good." },
+      { text: "Look at your phone to avoid participating in this conversation", score: 5, reply: "📱 Valid, honestly. The relatives at these events are a lot." },
+      { text: "Ask 'AIR 1 matlab kya hota hai?' mid-conversation", score: 0, reply: "😭 Chaotic energy. He'd laugh for 10 minutes. Then explain. Romance pending." }
+    ]
+  },
+  {
+    q: "Harsh says his love language is 'solving your problems algorithmically.' You:",
+    options: [
+      { text: "Say 'mine is dynamic programming — I remember everything'", score: 10, reply: "💥 LEGENDARY. Frame this conversation immediately." },
+      { text: "Think it's cute in a chaotic way and lean into it", score: 8, reply: "😄 Excellent. You get it. You really get it." },
+      { text: "Smile politely, internally Googling 'what is algorithmic'", score: 5, reply: "😂 Honest. Relatable. He'll teach you. That's also love." },
+      { text: "Say 'that's not how love works' — seriously", score: 2, reply: "📚 Tell that to his CGPA. Love is O(1) lookup for him." }
+    ]
+  }
+];
+
+let currentQ = 0, totalScore = 0;
+
+function renderQuiz() {
+  const container = document.getElementById('quizContainer');
+  if (currentQ >= quizData.length) {
+    let verdict = '';
+    if (totalScore >= 34) verdict = "🏆 PERFECT MATCH — Kundali formality hai baki. You two deserve each other. Scientifically proven.";
+    else if (totalScore >= 22) verdict = "💛 STRONG COMPATIBILITY — Very promising. With enough chai and patience, this can work wonderfully.";
+    else if (totalScore >= 12) verdict = "😅 MODERATE MATCH — You'll keep each other interesting. He'll explain algorithms; you'll keep him grounded. Balance.";
+    else verdict = "💀 CHAOTIC NEUTRAL — Extremely unpredictable chemistry. Could be terrible. Could be legendary. No in-between.";
+
+    container.innerHTML = `
+      <div class="quiz-result show">
+        <div style="font-size:24px; margin-bottom:10px;">Your Result 🎉</div>
+        <div style="font-size:20px; line-height:1.6;">${verdict}</div>
+        <div style="font-size:14px; margin-top:10px; color:rgba(255,255,255,0.5);">Score: ${totalScore}/${quizData.length * 10}</div>
+        <button class="confetti-btn" style="margin-top:16px;" onclick="resetQuiz()">Try Again</button>
+      </div>`;
+    return;
+  }
+
+  const q = quizData[currentQ];
+  container.innerHTML = `
+    <div class="quiz-question">Q${currentQ + 1}/${quizData.length}: ${q.q}</div>
+    <div class="quiz-options">
+      ${q.options.map((o, i) => `<button class="quiz-btn" onclick="answerQ(${i})">${o.text}</button>`).join('')}
+    </div>
+    <div class="quiz-result" id="qResult"></div>
+    <button id="quiz-next" onclick="nextQ()">Next Question →</button>
+  `;
+}
+
+function answerQ(i) {
+  const q = quizData[currentQ];
+  totalScore += q.options[i].score;
+  document.querySelectorAll('.quiz-btn').forEach(b => b.disabled = true);
+  const result = document.getElementById('qResult');
+  result.textContent = q.options[i].reply;
+  result.classList.add('show');
+  document.getElementById('quiz-next').style.display = 'inline-block';
+  spawnFloaty('✨');
+}
+
+function nextQ() {
+  currentQ++;
+  renderQuiz();
+}
+
+function resetQuiz() {
+  currentQ = 0; totalScore = 0;
+  renderQuiz();
+}
+
+renderQuiz();
+
+// ===================== FLOATY EMOJIS =====================
+function spawnFloaty(emoji) {
+  const el = document.createElement('div');
+  el.className = 'floaty';
+  el.textContent = emoji;
+  el.style.left = (Math.random() * window.innerWidth) + 'px';
+  el.style.top = (window.innerHeight - 60) + 'px';
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 2000);
+}
+
+// ===================== CONFETTI BUTTON =====================
+function launchCelebration() {
+  const emojis = ['🏆','🎉','⭐','✨','🥇','💫','🎊','👑','🔥','💪'];
+  for (let i = 0; i < 25; i++) {
+    setTimeout(() => spawnFloaty(emojis[Math.floor(Math.random() * emojis.length)]), i * 60);
+  }
+}
+
+// ===================== SKILL PILL CLICK =====================
+document.querySelectorAll('.skill-pill').forEach(pill => {
+  pill.addEventListener('click', () => spawnFloaty('⚡'));
+});
+
+// ===================== EASTER EGG — KONAMI =====================
+const konami = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+let kIdx = 0;
+document.addEventListener('keydown', e => {
+  if (e.key === konami[kIdx]) { kIdx++; } else { kIdx = 0; }
+  if (kIdx === konami.length) {
+    kIdx = 0;
+    for (let i = 0; i < 50; i++) setTimeout(() => spawnFloaty('🏆'), i * 40);
+    alert('🏆 KONAMI CODE ACTIVATED — AIR 1 ULTRA MODE UNLOCKED. Har Harsh ek nahin hota. 💛');
+  }
+});
+</script>
+</body>
+</html>
