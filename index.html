@@ -902,9 +902,18 @@ nav a:hover { color: #fff; }
 }
 
 /* ===================== RESPONSIVE ===================== */
-/* ===================== RESPONSIVE ===================== */
 @media (max-width: 680px) {
-  /* ... your existing responsive code ... */
+  nav { display: none; }
+  .hero { padding: 40px 24px 36px; }
+  .hero-name { font-size: 38px; } /* Shrinks the giant name so Mirchandani fits */
+  .hero-eligible { font-size: 22px; margin-top: 6px; } /* Shrinks the Most Eligible text */
+  .card { padding: 28px 24px; }
+  .bento { grid-template-columns: 1fr 1fr; }
+  .bento-cell.wide { grid-column: span 2; }
+  .req-grid { grid-template-columns: 1fr; }
+  .meter-row { grid-template-columns: 120px 1fr 40px; }
+  .info-row { grid-template-columns: 130px 1fr; }
+  .hero-cols { grid-template-columns: 1fr; }
   .stamp { display: none; }
 }
 
