@@ -196,6 +196,18 @@ nav a:hover { color: #fff; }
   font-style: italic;
 }
 
+/* --- ADD THIS NEW BLOCK --- */
+.hero-eligible {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: 10px;
+  letter-spacing: 1px;
+  animation: fadeDown 0.7s 0.95s ease both;
+}
+/* -------------------------- */
+
 .hero-tagline {
   font-family: 'Caveat', cursive;
   font-size: 22px;
@@ -203,7 +215,6 @@ nav a:hover { color: #fff; }
   margin: 12px 0 8px;
   animation: fadeDown 0.7s 1s ease both;
 }
-
 .hero-sub {
   font-size: 12px;
   letter-spacing: 3px;
@@ -891,21 +902,38 @@ nav a:hover { color: #fff; }
 }
 
 /* ===================== RESPONSIVE ===================== */
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 680px) {
-  nav { display: none; }
-  .hero { padding: 40px 24px 36px; }
-  .hero-name { font-size: 48px; }
-  .card { padding: 28px 24px; }
-  .bento { grid-template-columns: 1fr 1fr; }
-  .bento-cell.wide { grid-column: span 2; }
-  .req-grid { grid-template-columns: 1fr; }
-  .meter-row { grid-template-columns: 120px 1fr 40px; }
-  .info-row { grid-template-columns: 130px 1fr; }
-  .hero-cols { grid-template-columns: 1fr; }
+  /* ... your existing responsive code ... */
   .stamp { display: none; }
+}
+
+/* ===================== SOCIAL LINKS ===================== */
+.footer-social {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+}
+
+.footer-social a {
+  color: var(--gold2);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  border: 1px dashed transparent;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.footer-social a:hover {
+  color: #fff;
+  border-color: var(--gold);
+  background: rgba(201, 168, 76, 0.1);
 }
 </style>
 </head>
+
 <body>
 
 <canvas id="particles"></canvas>
@@ -938,11 +966,14 @@ nav a:hover { color: #fff; }
       <span class="stamp-text">India 2025</span>
     </div>
 
-    <div class="hero-badge">✦ Premium Marriage Biodata — 2025 Edition ✦</div>
+ <div class="hero-badge">✦ Premium Marriage Biodata — 2026 Edition ✦</div>
+    
     <div class="hero-name">Harsh <span>Mirchandani</span></div>
+    
+    <div class="hero-eligible">Most Eligible Single Person of the College</div>
+    
     <div class="hero-tagline">"Yes, the AIR 1 guy. Yes, he's single. No, we don't understand it either."</div>
     <div class="hero-sub">IIT Bombay · Computer Science · Age 20 · One-of-a-Kind</div>
-
     <div class="hero-cols">
       <div class="hero-stats-row">
         <div class="hero-stat">
